@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ejemplo básico</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	
+</body>
+<h1>LISTA DE TAREAS</h1>
+
+<div class="datos">
+	<p id="total">Total tareas: 0</p>
+	<p id="completadas">Tareas Completadas: 0</p>
+</div>
+
+<div class="contenedor">
+
+	<form class="formulario" id="formulario">
+		<h4>FORMULARIO</h4>
+		<input type="text" id="tarea">
+		<input type="submit" value="Agregar">
+	</form>
+
+	<div class="tareas" id="tareas">
+
+		<div class="item-tarea">
+			<p>Tarea 1</p>
+			<div class="botones">
+				<button class="eliminar" data-id="${item.id}">x</button>
+				<button class="completada" data-id="${item.id}">?</button>
+			</div>
+		</div>
+		<!-- <h5>~SIN TAREAS~</h5> -->
+
+	</div>
+
+</div>
+
+
+	<script src="./index.js" type="module"></script>
+</body>
+
+</html>
